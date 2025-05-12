@@ -36,7 +36,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold text-white mb-4 text-center">Find Us</h3>
           <div className="w-full h-64 rounded-lg overflow-hidden">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.863994055184!2d77.31945001508657!3d28.467825982485386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce626851f7009%3A0x621206784a69e4a8!2sJ.C.%20Bose%20University%20of%20Science%20and%20Technology%2C%20YMCA!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.7145120782916!2d77.31331997382446!3d28.367479596070623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc71f6e9f557%3A0xeb301eec9ff18517!2sJ.C.%20Bose%20University%20of%20Science%20and%20Technology%2C%20YMCA%20(Formerly%20YMCA%20UST)!5e0!3m2!1sen!2sin!4v1747047335638!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

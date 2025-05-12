@@ -5,24 +5,21 @@ const About = () => {
     
       <div className='mast mt-10 flex flex-col gap-7'>
         <div>
-        <p className='text-[#A7101F] text-5xl text-center'>Who We are</p>
+        <p className='roboto text-[#A7101F] text-5xl text-center'>Who We are</p>
 
         </div>
       
-      <div>
-        We are the heartbeat of humanity on campus —
-        The Youth Red Cross Club at J.C. Bose University of Science and Technology, where compassion meets action.
+      <div className='text-slate-500 p-7'>
+        
+        We are the Youth Red Cross Club at J.C. Bose University of Science and Technology — where compassion meets action.
 
-        Driven by the spirit of service and unity, we are a dynamic community of passionate changemakers — students who believe in the power of humanity to heal, protect, and uplift.
+United by the spirit of service, we are a vibrant student community committed to healing, protecting, and uplifting lives.
 
-        From organizing life-saving blood donation drives, first-aid training workshops, to mental health awareness campaigns — we don’t just learn about life, we save it. Every year, we proudly celebrate World Red Cross Day, honoring the legacy of kindness and resilience that inspires us to move forward.
+From blood donation drives and first-aid workshops to mental health campaigns, we lead with purpose. We proudly celebrate World Red Cross Day each year, honoring a legacy of kindness and resilience.
 
-        But our impact doesn’t stop at our campus gates.
-        We're in strong association with affiliated colleges, expanding our network into a vast, vibrant community of hundreds of dedicated members, all committed to a single cause — serving society with empathy, energy, and excellence.
-
-        Join us, and be a part of a movement that turns small acts into life-changing moments.
-
-        Together, we are the Red Cross — young, united, and unstoppable.
+Our reach extends beyond campus through strong ties with affiliated colleges, uniting hundreds in service to society.
+<p>Join the movement — young, united, and unstoppable.
+</p>
       </div>
     </div>
   )

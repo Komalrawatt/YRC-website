@@ -7,7 +7,7 @@ const OnGoing = () => {
     return (
         <div className=" mast p-6 bg-white text-center flex  flex-col mt-20 ">
             <div>
-                <h1 className="text-4xl font-bold text-[#A7101F] mb-4">OnGoing Events</h1>
+                <h1 className="roboto text-6xl font-bold text-[#A7101F] mb-4">OnGoing Events</h1>
 
             </div>
             <div>

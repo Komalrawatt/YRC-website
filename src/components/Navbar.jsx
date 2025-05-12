@@ -75,8 +75,9 @@ const activities = [
 
 
 const Navbar = () => {
+  // drop-shadow-[0_10px_20px_rgba(255,0,0,0.2)]
   return (
-    <div className="flex items-center justify-between bg-white p-5 drop-shadow-[0_10px_20px_rgba(255,0,0,0.2)] sticky top-0 z-50 ">
+    <div className="flex items-center justify-between bg-white p-5  sticky top-0 z-50 ">
       <div className='logo cursor-pointer text-3xl flex gap-2 hover:scale-110 transition duration-200 ml-3' >
         <div>
           <img className='h-9 w-9 ' src={mainlogo} alt="" />

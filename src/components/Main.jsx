@@ -5,20 +5,20 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
- import logo from '../assets/mainlogo.jpg'
+//  import logo from '../assets/mainlogo.jpg'
 const Main = () => {
     return (
         <div className=' flex flex-col justify-center items-center '>
             
-            {/* logo */}
+            {/* logo
             <div className='logo  h-55 w-55 rounded-full m-10'>  
                 <img src={logo} alt=""
                 className=' rounded-full shadow-[0_0_120px_rgba(255,0,0,0.6)]  transition-transform duration-300 hover:scale-90  '
                 />
-            </div>
+            </div> */}
             {/* title */}
-            <div>
-                <h1 className="roboto text-5xl md:text-7xl font-bold mb-6 bg-[#A7101F]    bg-clip-text text-transparent">
+            <div className='mt-20 '>
+                <h1 className=" text-6xl roboto md:text-7xl font-bold mb-6 bg-[#A7101F]    bg-clip-text text-transparent">
                     Youth Red Cross Club
                 </h1>
             </div>

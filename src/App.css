@@ -180,5 +180,28 @@
   animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
 }
 
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(-20px); opacity: 0.2; }
+  100% { transform: translateY(20px); opacity: 0.4; }
+}
+
+/* Make the animation durations shorter for faster movement */
+.animate-float {
+  animation: float 2s ease-in-out infinite; /* was 6s, now faster */
+}
+
+.animate-fall {
+  animation: fall 1.5s linear infinite; /* was 4s, now faster */
+}
+
+/* .animate-fast-spin {
+  animation: spin 0.6s linear infinite;
+} */
 
 

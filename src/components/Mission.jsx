@@ -9,7 +9,7 @@ const Mission = () => {
         <div className=" mast py-16 bg-white mt-30 ">
         <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Mission & Values</h2>
+            <h2 className="roboto text-5xl font-extrabold text-gray-900 sm:text-4xl">Our Mission & Values</h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
               "Service to humanity is the greatest service in this world"
             </p>

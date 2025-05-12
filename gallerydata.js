@@ -12,6 +12,8 @@ import aman from '/gallery_images/social/aman.jpg';
 import tanisha from '/gallery_images/social/tanisha.jpg';
 import chetna from '/gallery_images/social_head/chetna.jpg';
 import komal from '/gallery_images/technical/komal.jpg';
+import vishu from '/gallery_images/technical/vishu.jpg';
+import sheetal from '/gallery_images/technical/sheetal.jpg';
 import sachin from '/gallery_images/technical/sachin.jpg';
 import harish from '/gallery_images/technical_head/harish.jpg';
 import adhikshar from '/gallery_images/volunteer/adhikshar.jpg';
@@ -27,139 +29,188 @@ import sangam from '/gallery_images/volunteer/sangam.jpg';
 
 
 export const teamData = {
-    // coordinator:
-    //     [
-    //       {},{},{}
-    //     ],
-    cultural: [
-        {
-            name: "Anshika Rajput",
-            photo: avantika,
-        },
-        {
-            name: "Ishika",
-            photo: ishika,
-        },
-        {
-            name: "Shilpi",
-            photo: shilpi,
-        }
-    ],
+   // coordinator:
+   //     [
+   //       {},{},{}
+   //     ],
+   "Secretary": [
+      {
+         name: "Mohit Kumar",
+         photo: mohit,
+         role: "Secretary"
+      },
 
-    cultural_head: [
-        {
-           name:"Avantika Singh",
-           photo:avantika,
-        },
-        
-    ],
-    design_head: [
-        {
-            name:"Drishti Mistra",
-            photo:drishti,
-         },
-        
-    ],
-    joints: [
-        {
-            name:"Yashowardhan",
-            photo:yashowardhan,
-         },
-         
-    ],
-    s: [
-        {
-            name:"Mohit Kumar",
-            photo:mohit,
-         },
-        
-    ],
-    session: [
-        {
-            name:"Dipender Singh",
-            photo:dipender,
-         },
-          {
-             name:"Kanak Bindroo",
-            photo:kanak,
-         },
-          {
-             name:"Satyam Shashwat",
-            photo:satyam,
-         }
-    ],
-    social: [
-        {
-            name:"Aman",
-            photo:aman,
-         },
-          {
-             name:"Tanisha",
-            photo:tanisha,
-         },
-         
-    ],
-    social_head: [
-        {
-            name:"chetna",
-            photo:chetna,
-         },
-         
-    ],
-    technical: [
-        {
-            name:"Komal Rawat",
-            photo:komal,
-         },
-          {
-             name:"Sachin",
-            photo:sachin,
-         },
-         
-    ],
-    technical_head: [
-        {
-            name:"Harish",
-            photo:harish,
-         }
-         
-    ],
-    volunteer: [
-        {
-            name:"Adhikshar",
-            photo:adhikshar,
-         },
-          {
-             name:"Deepa Yadav",
-            photo:deepa,
-         },
-          {
-             name:"Mohan Yadav",
-            photo:mohan
-         },
-         {
-            name:"Namrata Kapoor",
-            photo:namrata
-         },
-          {
-             name:"Payal Sardhana",
-            photo:payal
-         },
-          {
-             name:"Ragini Gupta",
-            photo:ragini
-         },
-         {
-            name:"Rashmi",
-            photo:rashmi,
-         },
-          {
-             name:"Rashmi",
-            photo:rashmi1,
-         },
-          {
-             name:"Sangam Gupta",
-            photo:sangam,
-         }
-    ]
+   ],
+   "Joint Secretary": [
+      {
+         name: "Yashowardhan",
+         photo: yashowardhan,
+         role: "Joint Secretary"
+
+      },
+   ],
+
+   "Heads": [
+      {
+         name: "Avantika Singh",
+         photo: avantika,
+         role: "Cultural Head"
+      },
+      {
+         name: "Drishti Mistra",
+         photo: drishti,
+         role: "Design Head"
+      },
+      {
+         name: "chetna",
+         photo: chetna,
+         role: "Social Head"
+      },
+      {
+         name: "Harish",
+         photo: harish,
+         role: "Technical Head"
+      }
+   ],
+   "Technical Team": [
+      {
+         name: "Komal Rawat",
+         photo: komal,
+         role: "Technical Team"
+      },
+      {
+         name: "Vishakha",
+         photo: vishu,
+         role: "Technical Team"
+      },
+      {
+         name: "Sachin",
+         photo: sachin,
+         role: "Technical Team"
+      },
+      {
+         name: "Sheetal",
+         photo: sheetal,
+         role: "Technical Team"
+      },
+   ],
+   "Cultural Team": [
+      {
+         name: "Anshika Rajput",
+         photo: avantika,
+         role: "Cultural Team"
+      },
+      {
+         name: "Ishika",
+         photo: ishika,
+         role: "Cultural Team"
+
+      },
+      {
+         name: "Shilpi",
+         photo: shilpi,
+         role: "Cultural Team"
+
+      }
+   ],
+
+   "Session Team": [
+      {
+         name: "Dipender Singh",
+         photo: dipender,
+         role: "Session Team"
+      },
+      {
+         name: "Kanak Bindroo",
+         photo: kanak,
+         role: "Session Team"
+      },
+      {
+         name: "Satyam Shashwat",
+         photo: satyam,
+         role: "Session Team"
+      }
+   ],
+   "Social Team": [
+      {
+         name: "Aman",
+         photo: aman,
+         role: "Social Team"
+      },
+      {
+         name: "Tanisha",
+         photo: tanisha,
+         role: "Social Team"
+      },
+
+   ],
+   "Volunteers": [
+      {
+         name: "Adhikshar",
+         photo: adhikshar,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Deepa Yadav",
+         photo: deepa,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Mohan Yadav",
+         photo: mohan
+         ,
+         role: "Volunteer Team"
+      },
+      
+      {
+         name: "Satyam",
+         photo: satyam,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Kanak",
+         photo: kanak,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Dipender",
+         photo: dipender,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Namrata Kapoor",
+         photo: namrata
+         ,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Payal Sardhana",
+         photo: payal,
+         role: "Volunteer Team"
+      },
+      {
+         name: "Ragini Gupta",
+         photo: ragini,
+         role: "Volunteer Team"
+
+      },
+      {
+         name: "Rashmi",
+         photo: rashmi,
+         role: "Volunteer Team"
+
+      },
+      {
+         name: "Rashmi",
+         photo: rashmi1,
+         role: "Volunteer Team"
+
+      },
+      {
+         name: "Sangam Gupta",
+         photo: sangam,
+         role: "Volunteer Team"
+
+      }
+   ]
 }
