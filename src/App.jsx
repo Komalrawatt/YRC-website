@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import PastEvents from './pages/PastEvents'
-import OnGoing from './pages/OnGoing'
+import OnGoing from './pages/OngoingEvents'
 import UpComing from './pages/UpComing'
 import Team from './pages/Team'
 // import Coordinators from './pages/Coordinators'
@@ -15,6 +15,7 @@ import Gallery from './pages/Gallery'
 import Volunteer from './pages/Volunteer'
 
 import { Routes, Route } from 'react-router-dom'
+import OngoingEvents from './pages/OngoingEvents'
 function App() {
 
   return (
@@ -23,7 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/past-events" element={<PastEvents />} />
-        <Route path="/ongoing-events" element={<OnGoing />} />
+        <Route path="/ongoing-events" element={<OngoingEvents />} />
         <Route path="/upcoming-events" element={<UpComing />} />
         {/* <Route path="/coordinators" element={<Coordinators />} />
         <Route path="/members" element={<Members />} />

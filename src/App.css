@@ -177,7 +177,7 @@
   border-right: 2px solid #A7101F; /* Red border */
   width: 0;
   padding: 6px;
-  animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+  animation: typing 7s steps(20, end) forwards, blink 0.75s step-end infinite;
 }
 
 @keyframes float {

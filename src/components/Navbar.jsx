@@ -23,7 +23,7 @@ const activities = [
   },
   {
     title: "Ongoing Events",
-    href: "/ongoing-events",
+    href: "/#Ongoing",
     description:
       "For sighted users to preview content available behind a link.",
   },
@@ -112,7 +112,7 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/about">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/about">
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]'  to="/#about" >
                   About
                 </Link>
               </NavigationMenuLink>

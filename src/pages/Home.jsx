@@ -6,13 +6,32 @@ import Mission from '../components/Mission'
 import OnGoing from '../components/OnGoing'
 import Mainpage from '../components/Mainpage'
 // import About from './pages/About'
+
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+
+ 
+
+
+
 const Home = () => {
+
+     const contactRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#about') {
+      contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+
     return (
         <div className='' >
             <Mainpage/>
             <Main />
             <Mission />
-            <div className='mast flex h-[500px] w-[100vw] justify-center items-center gap-12 mt-25 '>
+            <div   ref={contactRef}   id="about"
+            className='mast flex h-[500px] w-[100vw] justify-center items-center gap-12 mt-25 '>
                <div className='h-[60vh] w-[50wh]' >
                         <div  className='p-6'>
                         <p className='roboto text-[#A7101F] text-6xl text-center'>Who We Are</p> 
@@ -37,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <OnGoing />
+            <OnGoing  />
             {/* <About/> */}
             <Footer />
         </div >
