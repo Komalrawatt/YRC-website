@@ -76,7 +76,12 @@ const activities = [
 
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to close menu
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-white p-3 md:p-5 sticky top-0 z-50 w-full">
@@ -104,7 +109,7 @@ const Navbar = () => {
           <NavigationMenuList className="flex-col md:flex-row">
             <NavigationMenuItem>
               <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/">
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/" onClick={closeMenu}>
                   Home
                 </Link>
               </NavigationMenuLink>
@@ -112,21 +117,24 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/about">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]'  to="/#about" >
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/#about" onClick={closeMenu}>
                   About
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger className='hover:cursor-pointer hover:text-[#A7101F]'>Activities</NavigationMenuTrigger>
+              <NavigationMenuTrigger className='hover:cursor-pointer hover:text-[#A7101F]'>
+                Activities
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {activities.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}
                       to={component.href}
+                      onClick={closeMenu}
                     >
                       {component.description}
                     </ListItem>
@@ -137,15 +145,15 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/gallery">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/gallery">
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/gallery" onClick={closeMenu}>
                   Gallery
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/contact">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/team">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/team">
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/team" onClick={closeMenu}>
                   Teams
                 </Link>
               </NavigationMenuLink>
@@ -153,7 +161,7 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink className={navigationMenuTriggerStyle()} as={Link} to="/contact">
-                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/contact">
+                <Link className='hover:cursor-pointer hover:text-[#A7101F]' to="/contact" onClick={closeMenu}>
                   Contact
                 </Link>
               </NavigationMenuLink>
@@ -163,15 +171,15 @@ const Navbar = () => {
         </NavigationMenu>
 
         {/* Volunteer Button */}
-        <button className='w-full md:w-auto mt-4 md:mt-0'>
+        <button className='w-full md:w-auto mt-4 md:mt-0' onClick={closeMenu}>
           <Button className='bg-[#A7101F] w-full md:w-auto text-1xl hover:bg-[#E4002A] cursor-pointer transition duration-100 ease-out hover:scale-90 mr-0 md:mr-3'>
             Volunteer Now
           </Button>
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 // AF1740
 // A31D1D
 // F95454

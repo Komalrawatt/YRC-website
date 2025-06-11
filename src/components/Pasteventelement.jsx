@@ -1,17 +1,17 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
-const Pasteventelement = ({ eventName, image }) => {
+const Pasteventelement = ({ eventName, image, date, venue }) => {
   return (
-    <div className="mast p-4 sm:p-5 md:p-6 bg-white text-center flex flex-col">
-      <div className="mb-4 sm:mb-6 md:mb-8">
+    <div className="mast p-4 sm:p-5 md:p-6 bg-white text-center flex flex-col items-center">
+      <div className="mb-4 sm:mb-6 md:mb-8 w-full">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-900">
           ⛑️ {eventName} ⛑️
         </h2>
       </div>
 
-      <div className="relative w-full">
-        <div className="aspect-video max-h-[500px] overflow-hidden rounded-lg">
+      <div className="relative w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto">
+        <div className="aspect-video max-h-[600px] overflow-hidden rounded-lg">
           <img
             src={image}
             alt={eventName}
@@ -23,18 +23,17 @@ const Pasteventelement = ({ eventName, image }) => {
         </div>
       </div>
 
-      {/* Optional: Add event details section */}
-      <div className="mt-4 sm:mt-6 md:mt-8 px-4">
+      <div className="mt-4 sm:mt-6 md:mt-8 px-4 w-full md:w-4/5 lg:w-3/4 xl:w-2/3">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base md:text-lg text-gray-600">
           <div className="p-3 bg-gray-50 rounded-lg">
             <span className="font-medium">📅 Date:</span> 
             <br />
-            Previous Event
+            {date}
           </div>
           <div className="p-3 bg-gray-50 rounded-lg">
             <span className="font-medium">📍 Venue:</span>
             <br />
-            University Campus
+            {venue}
           </div>
         </div>
       </div>

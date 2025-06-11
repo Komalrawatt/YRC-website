@@ -29,15 +29,15 @@ const Mainpage = () => {
   return (
     <div className="mb-3 px-4 md:px-6 lg:px-8 overflow-hidden">
       {/* Title Section */}
-      <div className="flex flex-col leading-tight md:leading-[180px] text-[#A7101F] p-3 hover:text-[#E4002A] transition-transform duration-500 ease-in-out">
+      <div className="flex flex-col leading-tight md:leading-[100px] lg:leading-[140px] text-[#A7101F] p-3 hover:text-[#E4002A] transition-transform duration-500 ease-in-out">
         <p
-          className="font-bold text-5xl sm:text-8xl md:text-[180px] lg:text-[230px] tracking-tighter md:tracking-[-10.4412px]"
+          className="font-bold text-6xl sm:text-9xl md:text-[120px] lg:text-[180px] tracking-tighter md:tracking-[-8px] lg:tracking-[-10.4412px]"
           ref={textRef}
         >
           YOUTH
         </p>
         <p
-          className="font-bold text-5xl sm:text-8xl md:text-[180px] lg:text-[230px] tracking-tighter md:tracking-[-10.4412px]"
+          className="font-bold text-6xl sm:text-9xl md:text-[120px] lg:text-[180px] tracking-tighter md:tracking-[-8px] lg:tracking-[-10.4412px]"
           ref={redCrossRef}
         >
           RED CROSS
@@ -45,7 +45,7 @@ const Mainpage = () => {
       </div>
 
       {/* Image Section */}
-  <div className="-mx-4 sm:-mx-6 md:-mx-8 mt-5 md:mt-10">
+      <div className="-mx-4 sm:-mx-6 md:-mx-8 mt-0 sm:mt-1 md:mt-2">
         <div className="relative w-screen aspect-[16/9] sm:aspect-[16/8] md:aspect-[16/7]">
           <img
             ref={imageRef}
