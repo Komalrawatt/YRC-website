@@ -16,7 +16,7 @@ const PastEvents = () => {
         <Pasteventelement 
           eventName="First-Aid & Disaster Management Event" 
           image={firstAid} 
-          date="15th March 2023"
+          date="15th March 2025"
           venue="Auditorium, YMCA"
         />
         <Pasteventelement 

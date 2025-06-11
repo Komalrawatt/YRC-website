@@ -30,11 +30,11 @@ const OnGoing = () => {
 
         <div className="mt-8 sm:mt-10 md:mt-16 flex flex-col lg:flex-row w-full justify-center items-center gap-6 sm:gap-8 md:gap-16">
           {/* Event Image */}
-          <div className="w-full lg:w-1/2 max-w-[600px]"> {/* Decreased max-width */}
+          <div className="w-full lg:w-1/2 max-w-[600px]">
             <img
               src={ongoing}
               alt="Ongoing Event"
-              className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover rounded-lg 
+              className="w-full h-[400px] sm:h-[550px] md:h-[600px] lg:h-[650px] object-cover rounded-lg 
                        shadow-[0_0_50px_rgba(255,0,0,0.6)] sm:shadow-[0_0_75px_rgba(255,0,0,0.7)] md:shadow-[0_0_100px_rgba(255,0,0,0.8)] 
                        transition duration-300 hover:scale-105"
             />

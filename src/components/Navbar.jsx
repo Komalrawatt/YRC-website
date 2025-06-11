@@ -87,19 +87,19 @@ const Navbar = () => {
     <div className="flex flex-col md:flex-row items-center justify-between bg-white p-3 md:p-5 sticky top-0 z-50 w-full">
       {/* Logo Section */}
       <div className='flex justify-between items-center w-full md:w-auto'>
-        <div className='logo cursor-pointer text-2xl md:text-3xl flex gap-2 hover:scale-110 transition duration-200'>
+        <div className='logo cursor-pointer text-xl md:text-2xl flex gap-1.5 hover:scale-105 transition duration-200'>
           <div>
-            <img className='h-8 w-8 md:h-9 md:w-9' src={mainlogo} alt="" />
+            <img className='h-6 w-6 md:h-7 md:w-7' src={mainlogo} alt="" />
           </div>
           <h2 className="font-bold text-[#41080e]">YRC JCBUST</h2>
         </div>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden"
+          className="md:hidden p-1"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
@@ -128,7 +128,8 @@ const Navbar = () => {
                 Activities
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                <ul className="grid w-[280px] sm:w-[340px] md:w-[500px] lg:w-[600px] gap-3 p-4 
+                               grid-cols-1 md:grid-cols-2 mx-auto">
                   {activities.map((component) => (
                     <ListItem
                       key={component.title}
